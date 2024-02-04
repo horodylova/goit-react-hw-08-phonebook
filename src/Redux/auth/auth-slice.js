@@ -21,8 +21,8 @@ const authSlice = createSlice({
       })
       .addCase(signup.fulfilled, (store, { payload }) => {
         store.isLoading = false;
-        store.user = payload.user;
-        store.token = payload.token;
+        store.user = payload.user || {}; 
+        store.token = payload.token || ''; 
         store.isLogin = true;
       })
       .addCase(signup.rejected, (store, { payload }) => {

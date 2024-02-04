@@ -11,10 +11,23 @@ const setToken = token => {
   instance.defaults.headers.authorization = '';
 };
 
-export const signupUser = async data => {
-  const { data: result } = await instance.post('users/signup', data);
 
-  setToken(result.token);
+export const signupUser = async data => {
+  try {
+    const response = await instance.post('users/signup', data);
+
+    if (response.data) {
+      const { token, user } = response.data;
+      setToken(token);
+      return { user, token }; 
+    } else {
+      
+      throw new Error('Invalid response from server');
+    }
+  } catch (error) {
+    setToken(); 
+    throw error;
+  }
 };
 
 export const userLogin = async data => {
