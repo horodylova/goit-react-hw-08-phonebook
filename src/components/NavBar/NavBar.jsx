@@ -11,10 +11,6 @@ import items from './item';
 
 import css from './NavBar.module.css';
 
-// const getFullName = ({ isActive }) => {
-//     return isActive ? `${css.link} ${css.active}` : css.link;
-// }
-
 const NavBar = () => {
   const isLogin = useSelector(isUserLogin);
 

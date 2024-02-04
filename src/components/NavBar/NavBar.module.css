@@ -21,7 +21,6 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-  /* gap: 20px; */
 }
 
 .menu {
@@ -30,9 +29,6 @@
   padding: 0;
   margin-left: 30px;
   list-style: none;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
   gap: 20px;
 }
 
@@ -45,8 +41,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* селектор глобального класса :global() */
+
 .link:global(.active) {
   font-weight: bold;
-  /* color: rgb(83, 11, 177); */
+ 
 }

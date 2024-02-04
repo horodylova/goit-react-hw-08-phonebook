@@ -4,7 +4,6 @@ import useForm from 'shared/hooks/useForm';
 import initialState from './initialState';
 import TextField from 'shared/components/TextField/TextField';
 import fields from './fields';
-// import Button from 'shared/components/Button/Button';
 
 import css from './LoginForm.module.css';
 
