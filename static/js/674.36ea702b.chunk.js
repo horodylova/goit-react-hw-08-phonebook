@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[674],{8674:(e,t,a)=>{a.r(t),a.d(t,{default:()=>r});var s=a(1614),o=a(5985);a(5462);const c="HomePage_title__UFLA3";var l=a(3329);const r=()=>(0,l.jsxs)(s.Z,{maxWidth:"xl",children:[(0,l.jsx)("h2",{className:c,children:"Home Page"}),(0,l.jsx)(o.Ix,{autoClose:1500,position:"top-center"})]})},5462:()=>{}}]);
+//# sourceMappingURL=674.36ea702b.chunk.js.map
